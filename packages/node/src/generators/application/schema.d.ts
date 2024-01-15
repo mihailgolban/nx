@@ -25,6 +25,7 @@ export interface Schema {
   rootProject?: boolean;
   docker?: boolean;
   isNest?: boolean;
+  uiFramework?: 'react' | 'none';
 }
 
 export type NodeJsFrameWorks = 'express' | 'koa' | 'fastify' | 'nest' | 'none';

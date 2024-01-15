@@ -395,7 +395,7 @@ export async function applicationGeneratorInternal(tree: Tree, schema: Schema) {
       typeof import('@nx/webpack')
     >('@nx/webpack', nxVersion);
     const webpackInitTask = await webpackInitGenerator(tree, {
-      uiFramework: 'react',
+      uiFramework: options.uiFramework || 'react',
       skipFormat: true,
     });
     tasks.push(webpackInitTask);
